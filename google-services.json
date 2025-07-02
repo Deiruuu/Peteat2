@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "789316100788",
+    "project_id": "peteat-72cd7",
+    "storage_bucket": "peteat-72cd7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789316100788:android:0e18d864718168952bade1",
+        "android_client_info": {
+          "package_name": "com.deiniel04.Peteat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8wHWLNEvvU0YGXJqSXKgQlIkjD4eYKOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

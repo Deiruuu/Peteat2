@@ -1,0 +1,103 @@
+{
+  "expo": {
+    "name": "Peteat",
+    "slug": "Peteat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/peteat-logo.png",
+    "scheme": "peteat",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.deiniel04.Peteat"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/peteat-logo.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyC_8K5tsK7vBnZw75fEeu9chKReXb7cMwM"
+        }
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "peteat",
+              "host": "pet",
+              "pathPrefix": "/"
+            },
+            {
+              "scheme": "https",
+              "host": "peteat.app",
+              "pathPrefix": "/pet/"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "package": "com.deiniel04.Peteat"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/peteat-logo.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/peteat-logo.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Allow $(PRODUCT_NAME) to use your location to find nearby clinics."
+        }
+      ],
+      "expo-build-properties",
+      "expo-web-browser"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "cd83d875-9348-4ade-b7e1-8780ae1af8c9"
+      },
+      "owner": "deiniel04",
+      "apiUrl": "http://192.168.1.15:5000/api",
+      "devIp": "192.168.1.15"
+    }
+  }
+}
